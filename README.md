@@ -36,7 +36,7 @@ rlvla/
 
 | Component | Minimum | Recommended |
 |-----------|---------|-------------|
-| **GPU** | NVIDIA GPU with 8GB VRAM | RTX 4090 (24GB) or A100 (80GB) |
+| **GPU** | RTX 4090 (24GB) |  or A100 (80GB) |
 | **VRAM** | > 8 GB | 16GB+ |
 | **System RAM** | 16 GB | 32 GB |
 | **Storage** | 50 GB free space | 100 GB+ |
