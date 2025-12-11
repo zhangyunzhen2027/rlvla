@@ -1,0 +1,34 @@
+{
+  "hyperparameters": {
+    "action_horizon": 10,
+    "action_dim": 7,
+    "gamma": 0.99,
+    "beta": 1.0,
+    "lambda_v": 1.0,
+    "lambda_pi": 1.0,
+    "lr": 3e-4,
+    "batch_size": 32
+  },
+  "network_architecture": {
+    "image_size": 256,
+    "state_dim": 8,
+    "hidden_dim": 512,
+    "feature_dim": 512
+  },
+  "training": {
+    "num_epochs": 100,
+    "log_interval": 100,
+    "save_interval": 10
+  },
+  "description": {
+    "action_horizon": "动作chunk长度 H，表示一次预测的动作序列长度",
+    "action_dim": "动作维度，LIBERO任务为7维（6个关节+1个夹爪）",
+    "gamma": "折扣因子，用于计算未来奖励的现值",
+    "beta": "Advantage weighting温度参数，控制策略更新的强度",
+    "lambda_v": "Value损失权重，平衡value学习和critic学习",
+    "lambda_pi": "Policy损失权重，平衡策略学习和价值学习",
+    "lr": "学习率，所有网络使用相同的学习率",
+    "batch_size": "训练时的batch大小，根据内存调整"
+  }
+}
+

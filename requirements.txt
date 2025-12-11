@@ -1,0 +1,28 @@
+# Project Dependencies
+# Install with: pip install -r requirements.txt
+
+# LIBERO Dataset Tools
+h5py>=3.8.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+pillow>=9.5.0
+
+# Chunk-Level Offline RL Framework
+torch>=2.0.0
+pandas>=2.0.0
+pyarrow>=10.0.0
+tqdm>=4.65.0
+
+# Pi0 Checkpoint Download
+fsspec[gcs]>=2024.6.0
+filelock>=3.16.1
+
+# Utilities
+tyro>=0.9.5
+
+# LeRobot (managed via git)
+# lerobot from https://github.com/huggingface/lerobot.git
+
+# Note: For full Pi0 integration, ensure pi0_interface/openpi is available
+# Pi0 requires additional dependencies managed by the Pi0 project itself

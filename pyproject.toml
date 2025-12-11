@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "rlvla"
+version = "0.1.0"
+description = "Offline RL for improving Pi0 visuomotor policy on LIBERO benchmark"
+authors = ["yunzhen"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+# Core dependencies for chunk-level offline RL
+torch = ">=2.0.0"
+numpy = ">=1.24.0,<2.0"
+pandas = ">=2.0.0"
+pyarrow = ">=10.0.0"
+tqdm = ">=4.65.0"
+pillow = ">=9.5.0"
+# LIBERO dataset dependencies
+h5py = ">=3.8.0"
+opencv-python = ">=4.8.0"
+matplotlib = ">=3.7.0"
+tyro = ">=0.9.5"
+lerobot = {git = "https://github.com/huggingface/lerobot.git", rev = "0cf864870cf29f4738d3ade893e6fd13fbd7cdb5"}
+# Pi0 checkpoint download dependencies
+fsspec = {extras = ["gcs"], version = ">=2024.6.0"}
+filelock = ">=3.16.1"
+# HuggingFace Hub for uploading checkpoints
+huggingface-hub = ">=0.20.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

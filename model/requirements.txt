@@ -1,0 +1,20 @@
+# Chunk-Level Offline RL Framework Dependencies
+# Install with: pip install -r model/requirements.txt
+
+# Core Dependencies
+torch>=2.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+pyarrow>=10.0.0
+tqdm>=4.65.0
+pillow>=9.5.0
+
+# Pi0 Checkpoint Download Dependencies
+# Required for downloading Pi0 checkpoints from Google Cloud Storage
+fsspec[gcs]>=2024.6.0
+filelock>=3.16.1
+
+# Optional: For Full Pi0 Integration
+# Full Pi0 model loading requires pi0_interface/openpi to be available
+# Pi0 manages its own dependencies (JAX, Flax, Transformers, etc.)
+# See pi0_interface/openpi/pyproject.toml for full Pi0 dependencies
